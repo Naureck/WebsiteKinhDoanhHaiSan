@@ -1,0 +1,43 @@
+﻿@model List<Model.EF.Menu>
+@*<div class="menu">
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li>
+                <a href="@item.Link" target="@item.Target">@item.Text</a>
+               
+            </li>
+        }
+        <div class="clear"></div>
+    </ul>
+</div>*@
+
+<style>
+.txt-content
+{
+    display:flex;
+    color:white;
+    padding:20px;
+    align-items:center;
+    height:47px;
+    margin-left:25px;
+}
+</style>
+
+<div class="menu">
+    <ul>
+        <li>
+            <a href="/Home/Index" target="_self">Trang Chủ</a>
+        </li>
+        <li>
+            <a href="/danh-sach-sp" target="_self">Sản Phẩm</a>
+        </li>
+        <li>
+            <a href="/Contact/Index" target="_self">Liên Hệ</a>
+        </li>
+        <li>
+            <div class="txt-content"><img style="width:35px;" src="~/assets/client/images/icon/baseline_change_circle_white_36dp.png"/>Giao hàng từ 150.000đ</div>
+        </li>
+        <div class="clear"></div>
+    </ul>
+</div>

@@ -1,0 +1,11 @@
+﻿@model List<OnlineShop.Models.CartItem>
+<div class="cart">
+    <p>
+        <span><img style="height:33px; width:33px;" src="~/assets/client/images/icon/outline_shopping_cart_black_24dp.png" /></span><div id="dd" class="wrapper-dropdown-2">
+            @Model.Count sản phẩm
+            <ul class="dropdown">
+                <li>Bạn chưa có đồ trong giỏ hàng. Hãy mua sắm ngay!</li>
+            </ul>
+        </div>
+    </p>
+</div>
